@@ -14,7 +14,7 @@ export PYTHONPATH=${PWD}
 Then run:
 
 ```
-python src/main.py
+python src/chat_statistics/stats.py
 ```
 
 
