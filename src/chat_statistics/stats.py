@@ -37,7 +37,7 @@ class ChatStatistics:
         :param output_dir: path to output directory for word cloud image
         '''
         
-        logger.info(f"Loading text content...")
+        logger.info("Loading text content...")
         text_content = ''
         for i in self.chat_data['messages']:
             if type(i['text']) is str:
@@ -49,7 +49,7 @@ class ChatStatistics:
         self.text_content = arabic_reshaper.reshape(text_content)
         #text_content = get_display(text_content)
         
-        logger.info(f"generating word cloud")   
+        logger.info("generating word cloud")   
         #generate wordcloud
         wordcloud = WordCloud(
             width=1800,
