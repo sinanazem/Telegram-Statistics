@@ -66,3 +66,5 @@ class ChatStatistics:
 if __name__ == "__main__":
     obj = ChatStatistics(chat_json=DATA_DIR / 'result.json')
     obj.generate_word_cloud(DATA_DIR)
+    
+    print("Done!")
